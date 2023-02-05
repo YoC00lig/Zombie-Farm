@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src ="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Zombie Game</title>
+</head>
+<body>
+
+   <div class="game hidden" id = 'game'>
+        <canvas id = "c2"></canvas>
+        <canvas id = "c1"></canvas>
+
+        <div class ='heart-box'>
+
+            <img src="img/heart.png" class="heart heart1"/>
+            <img src="img/heart.png" class="heart heart2"/>
+            <img src="img/heart.png" class="heart heart3"/>
+
+        </div>
+
+        <div id = "tab">
+            <div id ="nick">Your nick:</div>
+            <div id = "scored">Score: 0</div>
+        </div>
+        
+        <div id = "cursor">
+            <div id = "red"></div>
+        </div>
+   </div>
+
+    <div class="modal" id = 'start'>
+        <h1 class="l l1"> Welcome in "Zombie Farm"! </h1>
+        <h2 class="l l2"> Input your nickname: </h2>
+        <form>
+            <label for="fname" id="label"></label><br>
+            <input type="text" id="fname" name="fname"><br>
+          </form>
+          <Button class = "button" id="btn"> START </Button>
+    </div>
+
+    <div class="modal hidden" id = 'end'>
+        <h1 class="l l1"> Game over </h1>
+        <h2 class="l l2"> Highscores</h2>
+        <ul class="score">
+            <li><div id = "first">1. Nick  /00/00/00</div></li>
+            <li><div id = "second">2. Nick  /00/00/00</div></li>
+            <li><div id = "third">3. Nick  /00/00/00</div></li>
+        </ul>
+        <Button class = "button" id="btn2"> PLAY AGAIN </Button>
+    </div>
+
+</body>
+</html>
